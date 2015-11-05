@@ -47,8 +47,8 @@ class RoadEvent: CustomStringConvertible {
             return "event id: \(eventId)\u{000A}" +
             "alernative route: \(alternativeRoute)\u{000A}" +
             "direct line distance: \(directLineDistance)\u{000A}" +
-            "start date: \(startDate) \u{000A}" +
-            "end date: \(endDate) \u{000A}" +
+            "start date: \(getDate(startDate)) \u{000A}" +
+            "end date: \(getDate(endDate)) \u{000A}" +
             "event comments: \(eventComments)\u{000A}" +
             "event description: \(eventDescription)\u{000A}" +
             "event island: \(eventIsland)\u{000A}" +
@@ -61,7 +61,13 @@ class RoadEvent: CustomStringConvertible {
             "restrictions: \(restrictions)\u{000A}" +
             "status: \(status)\u{000A}" +
             "wktGeometry: \(wktGeometry)\u{000A}" +
-            "wktGeometryType: \(wktGeometryType)\u{000A}"
+            "wktGeometryType: \(wktGeometryType)\u{000A}" +
+            "eventCreated: \(getDate(eventCreated))\u{000A}" +
+            "eventModified: \(getDate(eventModified))\u{000A}" +
+            "informationSource: \(informationSource)\u{000A}" +
+            "supplier: \(supplier)\u{000A}" +
+            "eventRegions: \(eventRegions)\u{000A}"
+            
         }
     }
     
@@ -138,6 +144,15 @@ class RoadEvent: CustomStringConvertible {
             } //end for
             //print(array)
         }
+    }
+    
+    private func getDate(date: NSDate) -> String {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "dd-MM-yyyy hh:mm a"
+        formatter.timeZone = NSTimeZone(forSecondsFromGMT: 13 * 3600)
+        //print(date)
+        return formatter.stringFromDate(date)
+
     }
     
     /**

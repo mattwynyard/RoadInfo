@@ -38,7 +38,7 @@ class XMLParser: NSObject, NSXMLParserDelegate {
         
         if elementName == "tns:roadEvent" {
             eventArray.append(RoadEvent())
-            //print(count)
+            print(count)
             count++
         }
         currentElement = elementName
@@ -46,7 +46,7 @@ class XMLParser: NSObject, NSXMLParserDelegate {
 
     func parser(parser: NSXMLParser, foundCharacters string: String) {
         
-        //print(string)
+        print(string)
         
         switch currentElement {
         case "tns:alternativeRoute":
@@ -107,6 +107,28 @@ class XMLParser: NSObject, NSXMLParserDelegate {
                 let nzmg: NZMGConverter = NZMGConverter(easting: eventArray[0].coordinate.0, northing: eventArray[0].coordinate.1)
                 print(nzmg.nzmgToNZGD1949())
             }
+        case "tns:eventCreated":
+            let date: NSDate = formatDate(string)
+            //let formatter = NSDateFormatter()
+            //formatter.dateFormat = "dd-MM-yyyy hh:mm a"
+            //formatter.timeZone = NSTimeZone(forSecondsFromGMT: 13 * 3600)
+            eventArray[count].eventCreated = date
+            
+        case "tns:eventModified":
+            let date: NSDate = formatDate(string)
+            let formatter = NSDateFormatter()
+            formatter.dateFormat = "dd-MM-yyyy hh:mm a"
+            formatter.timeZone = NSTimeZone(forSecondsFromGMT: 13 * 3600)
+            eventArray[count].eventModified = date
+            
+        case "tns:informationSource":
+            eventArray[count].informationSource = string
+            
+        case "tns:supplier":
+            eventArray[count].supplier = string
+            
+        case "tns:eventRegions":
+            eventArray[count].eventRegions.addObject(string)
             
         default:
             break

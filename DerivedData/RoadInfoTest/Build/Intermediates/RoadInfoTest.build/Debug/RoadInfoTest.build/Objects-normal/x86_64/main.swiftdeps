@@ -1,0 +1,265 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "running"
+- "xmlParser"
+- "httpGet"
+- "request"
+provides-nominal:
+provides-member:
+provides-dynamic-lookup:
+depends-top-level:
+- "!="
+- "NSRunLoop"
+- "httpGet"
+- "request"
+- "Void"
+- "String"
+- "running"
+- "NSURL"
+- "IntegerLiteralType"
+- !private "NSURLSession"
+- !private "NSString"
+- "StringLiteralType"
+- !private "Dictionary"
+- "NSData"
+- "NSDefaultRunLoopMode"
+- "NSDate"
+- !private "NSASCIIStringEncoding"
+- "FloatLiteralType"
+- "XMLParser"
+- "print"
+- "xmlParser"
+- !private "NSURLSessionConfiguration"
+- "BooleanLiteralType"
+depends-member:
+- !private ["PSs9AnyObject", "HTTPAdditionalHeaders"]
+- ["PSs9AnyObject", "currentRunLoop"]
+- !private ["PSs9AnyObject", "dataTaskWithURL"]
+- !private ["PSs9AnyObject", "defaultSessionConfiguration"]
+- !private ["PSs9AnyObject", "deinit"]
+- ["PSs9AnyObject", "eventArray"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "localizedDescription"]
+- !private ["PSs9AnyObject", "resume"]
+- ["PSs9AnyObject", "runMode"]
+- ["Sa", "subscript"]
+- ["PSs23ArrayLiteralConvertible", "subscript"]
+- ["Sb", "_getBuiltinLogicValue"]
+- ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "HTTPAdditionalHeaders"]
+- ["PSs11CVarArgType", "currentRunLoop"]
+- !private ["PSs11CVarArgType", "dataTaskWithURL"]
+- !private ["PSs11CVarArgType", "defaultSessionConfiguration"]
+- ["PSs11CVarArgType", "eventArray"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "localizedDescription"]
+- !private ["PSs11CVarArgType", "resume"]
+- ["PSs11CVarArgType", "runMode"]
+- ["PSs14CollectionType", "Generator"]
+- ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "Key"]
+- ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "Value"]
+- ["PSs14CollectionType", "_Element"]
+- ["PSs14CollectionType", "subscript"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "HTTPAdditionalHeaders"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "currentRunLoop"]
+- !private ["PSs23CustomStringConvertible", "dataTaskWithURL"]
+- !private ["PSs23CustomStringConvertible", "defaultSessionConfiguration"]
+- ["PSs23CustomStringConvertible", "eventArray"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "localizedDescription"]
+- !private ["PSs23CustomStringConvertible", "resume"]
+- ["PSs23CustomStringConvertible", "runMode"]
+- ["PSs23CustomStringConvertible", "subscript"]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs9Equatable", "HTTPAdditionalHeaders"]
+- ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "currentRunLoop"]
+- !private ["PSs9Equatable", "dataTaskWithURL"]
+- !private ["PSs9Equatable", "defaultSessionConfiguration"]
+- ["PSs9Equatable", "eventArray"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "localizedDescription"]
+- !private ["PSs9Equatable", "resume"]
+- ["PSs9Equatable", "runMode"]
+- !private ["PSs9ErrorType", "localizedDescription"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "HTTPAdditionalHeaders"]
+- ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "currentRunLoop"]
+- !private ["PSs8Hashable", "dataTaskWithURL"]
+- !private ["PSs8Hashable", "defaultSessionConfiguration"]
+- ["PSs8Hashable", "eventArray"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "localizedDescription"]
+- !private ["PSs8Hashable", "resume"]
+- ["PSs8Hashable", "runMode"]
+- ["PSs9Indexable", "Generator"]
+- ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "Key"]
+- ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "Value"]
+- ["PSs9Indexable", "_Element"]
+- ["PSs9Indexable", "subscript"]
+- ["VSs17IndexingGenerator", "Element"]
+- ["PSs21MutableCollectionType", "subscript"]
+- ["PSs16MutableIndexable", "subscript"]
+- ["PSs16MutableSliceable", "subscript"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "localizedDescription"]
+- !private ["PSo9NSCopying", "HTTPAdditionalHeaders"]
+- !private ["PSo9NSCopying", "defaultSessionConfiguration"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "localizedDescription"]
+- !private ["PSo9NSCopying", "resume"]
+- !private ["CSo6NSData", "init"]
+- ["CSo6NSDate", "init"]
+- !private ["CSo7NSError", "localizedDescription"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "HTTPAdditionalHeaders"]
+- ["CSo8NSObject", "currentRunLoop"]
+- !private ["CSo8NSObject", "dataTaskWithURL"]
+- !private ["CSo8NSObject", "defaultSessionConfiguration"]
+- !private ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "eventArray"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "localizedDescription"]
+- !private ["CSo8NSObject", "resume"]
+- ["CSo8NSObject", "runMode"]
+- !private ["PSo16NSObjectProtocol", "HTTPAdditionalHeaders"]
+- ["PSo16NSObjectProtocol", "currentRunLoop"]
+- !private ["PSo16NSObjectProtocol", "dataTaskWithURL"]
+- !private ["PSo16NSObjectProtocol", "defaultSessionConfiguration"]
+- ["PSo16NSObjectProtocol", "eventArray"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "localizedDescription"]
+- !private ["PSo16NSObjectProtocol", "resume"]
+- ["PSo16NSObjectProtocol", "runMode"]
+- ["CSo9NSRunLoop", "currentRunLoop"]
+- ["CSo9NSRunLoop", "runMode"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "localizedDescription"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- ["CSo5NSURL", "init"]
+- ["PSo17NSURLHandleClient", "init"]
+- !private ["CSo12NSURLSession", "dataTaskWithURL"]
+- !private ["CSo12NSURLSession", "init"]
+- !private ["CSo25NSURLSessionConfiguration", "HTTPAdditionalHeaders"]
+- !private ["CSo25NSURLSessionConfiguration", "defaultSessionConfiguration"]
+- !private ["CSo20NSURLSessionDataTask", "resume"]
+- !private ["CSo16NSURLSessionTask", "resume"]
+- ["PSo19NSXMLParserDelegate", "eventArray"]
+- ["PSo19NSXMLParserDelegate", "init"]
+- ["Sq", "deinit"]
+- ["PSs30RangeReplaceableCollectionType", "subscript"]
+- ["PSs12SequenceType", "Element"]
+- ["PSs12SequenceType", "Generator"]
+- ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "Key"]
+- ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "Value"]
+- ["PSs12SequenceType", "_Element"]
+- ["PSs12SequenceType", "subscript"]
+- ["VSs5Slice", "Generator"]
+- ["VSs5Slice", "Index"]
+- ["VSs5Slice", "SubSequence"]
+- ["VSs5Slice", "_Element"]
+- !private ["SS", "deinit"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- ["C12RoadInfoTest9XMLParser", "eventArray"]
+- ["C12RoadInfoTest9XMLParser", "init"]
+- ["PSs10_ArrayType", "subscript"]
+- ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs16_CocoaStringType", "init"]
+- ["PSs24_DestructorSafeContainer", "subscript"]
+- ["PSs32_FileReferenceLiteralConvertible", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["PSs21_ObjectiveCBridgeable", "subscript"]
+- ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "Key"]
+- !private ["PSs12_Reflectable", "Value"]
+- ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", "subscript"]
+depends-nominal:
+- "PSs9AnyObject"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
+- "Sb"
+- "PSs25BooleanLiteralConvertible"
+- "PSs11BooleanType"
+- "PSs11CVarArgType"
+- "PSs14CollectionType"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- "PSs13GeneratorType"
+- "PSs8Hashable"
+- "PSs9Indexable"
+- "VSs17IndexingGenerator"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- !private "CSo6NSData"
+- "CSo6NSDate"
+- !private "CSo7NSError"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "CSo9NSRunLoop"
+- "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "CSo5NSURL"
+- "PSo17NSURLHandleClient"
+- !private "CSo12NSURLSession"
+- !private "CSo25NSURLSessionConfiguration"
+- !private "CSo20NSURLSessionDataTask"
+- !private "CSo16NSURLSessionTask"
+- "PSo19NSXMLParserDelegate"
+- "Sq"
+- "PSs30RangeReplaceableCollectionType"
+- "PSs12SequenceType"
+- "VSs5Slice"
+- !private "SS"
+- !private "PSs24StringLiteralConvertible"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- "C12RoadInfoTest9XMLParser"
+- "PSs10_ArrayType"
+- "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- "PSs24_DestructorSafeContainer"
+- "PSs32_FileReferenceLiteralConvertible"
+- "PSs21_ObjectiveCBridgeable"
+- "VSs26_OptionalNilComparisonType"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+interface-hash: "b5b304b41df6a4b4abac175f616d2814"

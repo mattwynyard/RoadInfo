@@ -1,0 +1,9 @@
+version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
+options: "ce06261c7765c248b0736a2ca4744163"
+build_time: [499991059, 185000]
+inputs:
+  "/Users/Matt/programming/swift2/RoadInfoTest/RoadInfoTest/RoadEvent.swift": [499818864, 0]
+  "/Users/Matt/programming/swift2/RoadInfoTest/RoadInfoTest/NZMGConverter.swift": [499805595, 0]
+  "/Users/Matt/programming/swift2/RoadInfoTest/RoadInfoTest/Complex.swift": [499817964, 0]
+  "/Users/Matt/programming/swift2/RoadInfoTest/RoadInfoTest/XMLParser.swift": [499991058, 0]
+  "/Users/Matt/programming/swift2/RoadInfoTest/RoadInfoTest/main.swift": [499990620, 0]

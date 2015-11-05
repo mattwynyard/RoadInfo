@@ -11,8 +11,8 @@ import Foundation
 class Complex: CustomStringConvertible  {
     
     //Stored properties
-    var _real: Double;
-    var _imag: Double;
+    private var _real: Double;
+    private var _imag: Double;
     
     //Computed properties
     var magnitude: Double {
@@ -59,31 +59,31 @@ class Complex: CustomStringConvertible  {
     }
     
     //Methods
-    static func add(c1: Complex, to c2: Complex) -> Complex {
+    private static func add(c1: Complex, to c2: Complex) -> Complex {
         let xr = c1.real + c2.real
         let xi = c1.imag + c2.imag
         return Complex(real: xr, imag: xi)
     }
 
-    static func subtract(c1: Complex, from c2: Complex) -> Complex {
+    private static func subtract(c1: Complex, from c2: Complex) -> Complex {
         let xr = c1.real - c2.real
         let xi = c1.imag - c2.imag
         return Complex(real: xr, imag: xi)
     }
 
-    static func multiply(c1: Complex, by c2: Complex) -> Complex {
+    private static func multiply(c1: Complex, by c2: Complex) -> Complex {
         let xr = (c1.real * c2.real) - (c1.imag * c2.imag)
         let xi = (c1.real * c2.imag) + (c1.imag * c2.real)
         return Complex(real: xr, imag: xi)
     }
     
-    static func divide(c1: Complex, by c2: Complex) -> Complex {
+    private static func divide(c1: Complex, by c2: Complex) -> Complex {
         let xr = (c1.real * c2.real + c1.imag * c2.imag) / c2.magnitude
         let xi = ((c1.imag * c2.real) - (c1.real * c2.imag)) / c2.magnitude
         return Complex(real: xr, imag: xi)
     }
     
-    static func power(c1: Complex, x: Int) -> Complex {
+    private static func power(c1: Complex, x: Int) -> Complex {
         if x == 0 {return Complex(real: 1)}
         return c1 * power(c1, x: x - 1)
     }

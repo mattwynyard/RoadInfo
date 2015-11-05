@@ -18,7 +18,8 @@ func httpGet(request: NSURL!, callback: (NSData, String, String?) -> Void) {
     let task = session.dataTaskWithURL(request){
         (data, response, error) -> Void in
         if error != nil {
-            callback(data!, "", error!.localizedDescription)
+            let errorData = NSData()
+            callback(errorData, "", error!.localizedDescription)
         } else {
             let result = NSString(data: data!, encoding:
                 NSASCIIStringEncoding)!
@@ -33,11 +34,12 @@ func httpGet(request: NSURL!, callback: (NSData, String, String?) -> Void) {
 httpGet(request) {
     (responseData, xmlString, error) -> Void in
     if error != nil {
-        print(error)
+        print(error!)
+        running = false
     } else {
-        //print(xmlString)
+        print(xmlString)
         xmlParser = XMLParser(data: responseData)
-        //print(xmlParser.eventArray[28])
+        print(xmlParser.eventArray[0])
         running = false
     }
 }
